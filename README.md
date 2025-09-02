@@ -25,8 +25,8 @@
 
 #### Club Overview — Budget, Trends, Squad
 <p align="center">
-  <a href="docs/screenshots/club-overview-page.png">
-    <img src="docs/screenshots/club-overview-page.png" width="980" alt="Club Overview — KPI cards, budget donut, ppg vs ga_per90 scatter, season trend line and player matrix." />
+  <a href="https://raw.githubusercontent.com/ozzy2438/MoneyBall-Manchester-City/main/docs/screenshots/club-overview-page.png">
+    <img src="https://raw.githubusercontent.com/ozzy2438/MoneyBall-Manchester-City/main/docs/screenshots/club-overview-page.png" width="980" alt="Club Overview — KPI cards, budget donut, ppg vs ga_per90 scatter, season trend line and player matrix." />
   </a>
 </p>
 
@@ -39,8 +39,8 @@
 
 #### Transfer Decisions — Buy/Sell and Value Map
 <p align="center">
-  <a href="docs/screenshots/transfer-decision-page.png">
-    <img src="docs/screenshots/transfer-decision-page.png" width="980" alt="Transfer Decisions — Buy &amp; Sell lists, comp_pct vs predicted_points_uplift scatter, decision table." />
+  <a href="https://raw.githubusercontent.com/ozzy2438/MoneyBall-Manchester-City/main/docs/screenshots/transfer-decision-page.png">
+    <img src="https://raw.githubusercontent.com/ozzy2438/MoneyBall-Manchester-City/main/docs/screenshots/transfer-decision-page.png" width="980" alt="Transfer Decisions — Buy &amp; Sell lists, comp_pct vs predicted_points_uplift scatter, decision table." />
   </a>
 </p>
 
@@ -277,14 +277,14 @@ Raw Data → SQL Models → Business Logic → Power BI Dashboard → Action Ite
   - *Scatter Plot*: Performance vs. Value (X: completion%, Y: points uplift, Size: minutes)
 
 <p align="center">
-  <a href="docs/screenshots/club-overview-page.png">
-    <img src="docs/screenshots/club-overview-page.png" width="980" alt="Club Overview — Budget, Trends, Squad" />
+  <a href="https://raw.githubusercontent.com/ozzy2438/MoneyBall-Manchester-City/main/docs/screenshots/club-overview-page.png">
+    <img src="https://raw.githubusercontent.com/ozzy2438/MoneyBall-Manchester-City/main/docs/screenshots/club-overview-page.png" width="980" alt="Club Overview — Budget, Trends, Squad" />
   </a>
 </p>
 
 <p align="center">
-  <a href="docs/screenshots/transfer-decision-page.png">
-    <img src="docs/screenshots/transfer-decision-page.png" width="980" alt="Transfer Decisions — Buy/Sell and Value Map" />
+  <a href="https://raw.githubusercontent.com/ozzy2438/MoneyBall-Manchester-City/main/docs/screenshots/transfer-decision-page.png">
+    <img src="https://raw.githubusercontent.com/ozzy2438/MoneyBall-Manchester-City/main/docs/screenshots/transfer-decision-page.png" width="980" alt="Transfer Decisions — Buy/Sell and Value Map" />
   </a>
 </p>
 
