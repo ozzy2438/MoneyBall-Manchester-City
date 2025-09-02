@@ -4,6 +4,13 @@
 
 ---
 
+### Dashboard Overview (side‑by‑side)
+
+<p align="center">
+  <img src="https://github.com/ozzy2438/MoneyBall-Manchester-City/blob/451ac6a51f3aeb58f1c9458dfe23ae1e63a6567a/4-b28e25c6.jpg?raw=1" width="49%" alt="Page 1 — Club Overview (budget donut, PPG vs GA/90, season trend)">
+  <img src="https://github.com/ozzy2438/MoneyBall-Manchester-City/blob/451ac6a51f3aeb58f1c9458dfe23ae1e63a6567a/4-30d6399c.jpg?raw=1" width="49%" alt="Page 2 — Transfer Decisions (value map + shortlist table)">
+</p>
+
 ## Table of Contents
 
 - Executive Summary
@@ -32,6 +39,11 @@
 </div>
 
 <div align="center">
+  <img src="https://github.com/ozzy2438/MoneyBall-Manchester-City/blob/451ac6a51f3aeb58f1c9458dfe23ae1e63a6567a/4-b28e25c6.jpg?raw=1" width="49%" alt="Club Overview — combined view (donut + scatter + trend)">
+  <img src="https://github.com/ozzy2438/MoneyBall-Manchester-City/blob/e344efec2f8309d91ae3ca1b686f7322db9b267b/1-b28e25c6.jpg?raw=1" width="49%" alt="Player matrix by season — minutes, composite percentile, goals/shots per90">
+</div>
+
+<div align="center">
   <img src="https://github.com/ozzy2438/MoneyBall-Manchester-City/blob/e344efec2f8309d91ae3ca1b686f7322db9b267b/1-b28e25c6.jpg?raw=1" width="49%" alt="Player matrix by season — minutes, composite percentile, goals/shots per90">
   <img src="https://github.com/ozzy2438/MoneyBall-Manchester-City/blob/1b95a1eea76d71ae4be2c0a3a473739603f04b70/2-30d6399c.jpg?raw=1" width="49%" alt="Owner insights panel next to matrix — executive takeaways">
 </div>
@@ -49,6 +61,11 @@
 <div align="center">
   <img src="https://github.com/ozzy2438/MoneyBall-Manchester-City/blob/1b95a1eea76d71ae4be2c0a3a473739603f04b70/1-30d6399c.jpg?raw=1" width="49%" alt="Decision KPIs — Sell Avg Comp %, Buy Points Uplift, Sell Players, Sell Minutes">
   <img src="https://github.com/ozzy2438/MoneyBall-Manchester-City/blob/e344efec2f8309d91ae3ca1b686f7322db9b267b/2-b28e25c6.jpg?raw=1" width="49%" alt="Priority Players to Buy/Sell — ranked lists">
+</div>
+
+<div align="center">
+  <img src="https://github.com/ozzy2438/MoneyBall-Manchester-City/blob/451ac6a51f3aeb58f1c9458dfe23ae1e63a6567a/3-30d6399c.jpg?raw=1" width="49%" alt="Priority Players to Buy & Sell — detailed bars">
+  <img src="https://github.com/ozzy2438/MoneyBall-Manchester-City/blob/451ac6a51f3aeb58f1c9458dfe23ae1e63a6567a/4-30d6399c.jpg?raw=1" width="49%" alt="Transfer Value Map + Decision table (paired with shortlist)">
 </div>
 
 **What to notice**
