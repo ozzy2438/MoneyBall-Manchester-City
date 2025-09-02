@@ -23,13 +23,32 @@
 
 ### Screenshots (inline)
 
-**Club Overview**
+#### Club Overview — Budget, Trends, Squad
+<p align="center">
+  <a href="docs/screenshots/club-overview-page.png">
+    <img src="docs/screenshots/club-overview-page.png" width="980" alt="Club Overview — KPI cards, budget donut, ppg vs ga_per90 scatter, season trend line and player matrix." />
+  </a>
+</p>
 
-![Club Overview – Budget, Trends, Squad](docs/screenshots/club-overview-page.png)
+**What to notice**
+- KPI cards give quick context: points_gap, pyth_gap, xg/xga, attendance.
+- Donut shows annual budget distribution by team.
+- Scatter highlights relationship between GA/90 and PPG.
+- Line chart shows three-season points trend.
+- Matrix breaks down player contributions by season.
 
-**Transfer Decisions**
+#### Transfer Decisions — Buy/Sell and Value Map
+<p align="center">
+  <a href="docs/screenshots/transfer-decision-page.png">
+    <img src="docs/screenshots/transfer-decision-page.png" width="980" alt="Transfer Decisions — Buy &amp; Sell lists, comp_pct vs predicted_points_uplift scatter, decision table." />
+  </a>
+</p>
 
-![Transfer Decisions – Buy/Sell and Value Map](docs/screenshots/transfer-decision-page.png)
+**What to notice**
+- Left: **Priority Players to Buy** ranked by `predicted_points_uplift`.
+- Right: **Priority Players to Sell** with owner reasons and minutes to free.
+- Scatter: **X = `comp_pct`**, **Y = `predicted_points_uplift`**, **Size = minutes**, **Legend = position**.
+- Table: cross-check of first team/season/scenario for shortlisted players.
 
 ---
 
@@ -257,9 +276,17 @@ Raw Data → SQL Models → Business Logic → Power BI Dashboard → Action Ite
 - **Page 2: Transfer Decisions** - 4 KPIs, ranked Buy/Sell lists, Transfer Value Map
   - *Scatter Plot*: Performance vs. Value (X: completion%, Y: points uplift, Size: minutes)
 
-![Club Overview – Budget, Trends, Squad](docs/screenshots/club-overview-page.png)
+<p align="center">
+  <a href="docs/screenshots/club-overview-page.png">
+    <img src="docs/screenshots/club-overview-page.png" width="980" alt="Club Overview — Budget, Trends, Squad" />
+  </a>
+</p>
 
-![Transfer Decisions – Buy/Sell and Value Map](docs/screenshots/transfer-decision-page.png)
+<p align="center">
+  <a href="docs/screenshots/transfer-decision-page.png">
+    <img src="docs/screenshots/transfer-decision-page.png" width="980" alt="Transfer Decisions — Buy/Sell and Value Map" />
+  </a>
+</p>
 
 ---
 
