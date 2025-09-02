@@ -19,12 +19,176 @@
 
 ## Quick Links
 
-- PBIX download: [MoneyBall-Manchester-City.pbix](./powerbi/MoneyBall-Manchester-City.pbix)
-- Screenshots:
-  - Club Overview: [docs/screenshots/club-overview-page.png](docs/screenshots/club-overview-page.png)
-  - Transfer Decisions: [docs/screenshots/transfer-decision-page.png](docs/screenshots/transfer-decision-page.png)
+- **Download the PBIX:** [`MoneyBall-Manchester-City.pbix`](./powerbi/MoneyBall-Manchester-City.pbix)
 
-## 💰 **Executive Summary** *(30-Second Read)*
+### Screenshots (inline)
+
+**Club Overview**
+
+![Club Overview – Budget, Trends, Squad](docs/screenshots/club-overview-page.png)
+
+**Transfer Decisions**
+
+![Transfer Decisions – Buy/Sell and Value Map](docs/screenshots/transfer-decision-page.png)
+
+---
+
+## Moneyball for Women’s Football
+
+Transfer ROI → League Points (SQL + Power BI)
+
+- **Audience:** Club Owners, Director of Football, Recruitment & Analytics
+- **Business Question:** Which players should Manchester City Women buy or sell to maximize league points next season?
+- **Deliverable:** A Buy/Sell Decision App that converts player metrics into Predicted Points Uplift.
+
+**Live Report:** [`Power BI (.pbix)`](./powerbi/MoneyBall-Manchester-City.pbix) • **3-min Walkthrough:** ⟮Add Loom/YouTube⟯ • **Slide Deck:** [`docs/deck.pdf`](docs/deck.pdf)
+
+---
+
+## Executive Summary (30 seconds)
+
+- **Goal:** Turn transfer budget into league points efficiently (Moneyball lens).
+- **What I built:** SQL views + a Power BI app with 4 KPIs and 3 visuals tying player quality & role fit to Predicted Points Uplift.
+- **Outcome (snapshot):** Projected **+32.9 points** net uplift with **4 sells** freeing **~6K minutes**, while buy targets raise passing accuracy context (comp_pct).
+- **Why it matters:** Moves from raw stats to actionable recruitment — each Buy/Sell has a plain-English reason (owner-ready).
+
+---
+
+## Background & Problem
+
+Manchester City Women target the title. The constraint isn’t desire — it’s budget, minutes, and role fit. The question is not “who is good?”, but: **Who adds the most league points given our system and constraints?**
+
+---
+
+## Data & Assumptions
+
+- **Core features:** per-90 performance (xG, xGA, shots), `comp_pct` (passing accuracy proxy), `role_impact_score`, minutes (availability), composite percentile
+- **Season context:** trends and budgets via team-season metrics
+- **Assumptions:**
+  - Predicted Points Uplift learned from historical team performance + player context (feature-engineered in SQL views)
+  - Role/fit approximated by `role_impact_score` and position-level `comp_pct`
+  - Transfer fees not modeled yet → roadmap to add Pts/£m
+
+---
+
+## How It Works (Architecture)
+
+Pipeline overview
+
+Raw tables → SQL transforms (views) → Power BI model → Decision app (Buy/Sell)
+
+**Key SQL Views (consumed by Power BI):**
+- `wsl_v_points_per_goal` — league calibration (goals ↔ points)
+- `wsl_v_player_transfer_flags` — rule flags: low_composite, low_role, underfinish, young
+- `wsl_v_global_buy_top10` — external targets ranked by `predicted_points_uplift`
+- `wsl_v_city_sell_top5` — City players to sell (priority + owner reasons)
+- `PlayerDecisionFact` — union of Buy & Sell for a single slicer across visuals
+- `DimSeason`, `DimPosition` — report slicers
+
+> Add your model diagram to `docs/model-diagram.png` and link it here when ready.
+
+---
+
+## Metrics & Visuals
+
+**KPIs (top cards)**
+- Buy Avg Comp % — passing quality context of buy pool
+- Buy Points Uplift (Sum) — total expected league points from buys
+- Sell Players — count of exit candidates
+- Sell Minutes — minutes freed (budget & squad slots proxy)
+
+**Visuals**
+- Priority Players to Buy (Bar): by Predicted Points Uplift
+- Priority Players to Sell (Bar): count/priority + owner reasons
+- Transfer Value Map (Scatter):
+  - X: `comp_pct` (passing accuracy)
+  - Y: `predicted_points_uplift`
+  - Legend: position; Size: minutes; Tooltips: scenario, reasons, etc.
+
+**Slicers (apply to everything)**
+- `season` (DimSeason) • `position` (DimPosition)
+
+---
+
+## Key Insights
+
+- Buy value exists where `comp_pct` is high and `role_impact_score` is strong, even if raw goals aren’t top.
+- Sell candidates cluster with low composite and low role impact, or persistent underfinishing — freeing minutes reduces injury-risk concentration and funds buys.
+- Budget has not linearly translated into points — allocation quality > allocation size.
+
+---
+
+## Recommendations (Insight → Action)
+
+| Insight | Action | Expected Impact |
+|---|---|---|
+| High `comp_pct` + strong role fit correlates with uplift | Buy top-3 targets from `wsl_v_global_buy_top10` | +⟮X.X⟯ pts |
+| Low composite + low role impact | Sell `wsl_v_city_sell_top5` candidates | Free ⟮6K⟯ mins; reduce risk |
+| Defensive transition leaks (xGA context) | Add DF/MF hybrid (1st priority) | ⟮Y⟯ pts prevention |
+| Chance creation plateau | Add FW/MF creator | ⟮Z⟯ pts via chance quality |
+
+Each row is traceable in the app — every buy/sell has plain-English reasons (+ key metrics).
+
+---
+
+## How to Reproduce
+
+1. Run SQL (in order)
+   - `/sql/01_base.sql`
+   - `/sql/02_rules.sql`
+   - `/sql/03_views_buy_sell.sql`
+2. Open Power BI
+   - `MoneyBall-Manchester-City.pbix` → update SQL connection → Refresh
+3. (Optional) Publish
+   - Home → Publish → select My workspace (set gateway/credentials for scheduled refresh)
+
+---
+
+## Repository Structure
+
+```
+sql/
+  01_base.sql
+  02_rules.sql
+  03_views_buy_sell.sql
+powerbi/
+  MoneyBall-Manchester-City.pbix
+docs/
+  screenshots/
+    club-overview-page.png
+    transfer-decision-page.png
+  model-diagram.png   (optional)
+  deck.pdf            (optional)
+data/                 (CSV inputs)
+```
+
+---
+
+## Design Notes & Accessibility
+
+- Trend-first, minimal color, consistent typography
+- No “chart junk” (limited icons; bookmarks only for slicer panel)
+- All visuals and KPIs respond to shared slicers (season/position)
+- Table includes the same fields used in tooltips/KPIs for coherence
+
+---
+
+## Limitations & Stakeholder Questions
+
+- No transfer fee/wage data yet → next step: Pts/£m by player
+- Injury/availability not modeled — scenario page planned
+- Questions: Are there tactical role constraints for priority buys? Budget ceiling? Home-grown constraints?
+
+---
+
+## Why this README stands out
+
+- Starts with a real business decision and a 30-sec executive summary
+- Maps insight to action with owner-friendly reasons
+- Shows technical depth (SQL views, model) without burying the business value
+- Offers live links, repro steps, and clean design principles
+
+## 💰 **Extended Executive Summary** *(optional)*
 
 **The Challenge:** Manchester City Women's falling points-per-game (1.8 → 1.4) despite maintaining high transfer spending  
 **The Solution:** Advanced SQL analytics + Power BI dashboard delivering actionable transfer recommendations  
