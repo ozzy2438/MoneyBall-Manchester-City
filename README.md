@@ -50,6 +50,35 @@
 - Scatter: **X = `comp_pct`**, **Y = `predicted_points_uplift`**, **Size = minutes**, **Legend = position**.
 - Table: cross-check of first team/season/scenario for shortlisted players.
 
+#### Additional Screenshots (Gallery)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ozzy2438/MoneyBall-Manchester-City/main/docs/screenshots/image1.jpeg" width="980" alt="Screenshot 1" />
+</p>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ozzy2438/MoneyBall-Manchester-City/main/docs/screenshots/image2.png" width="980" alt="Screenshot 2" />
+</p>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ozzy2438/MoneyBall-Manchester-City/main/docs/screenshots/image3.jpeg" width="980" alt="Screenshot 3" />
+</p>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ozzy2438/MoneyBall-Manchester-City/main/docs/screenshots/image4.jpeg" width="980" alt="Screenshot 4" />
+</p>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ozzy2438/MoneyBall-Manchester-City/main/docs/screenshots/image5.jpeg" width="980" alt="Screenshot 5" />
+</p>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ozzy2438/MoneyBall-Manchester-City/main/docs/screenshots/image6.jpeg" width="980" alt="Screenshot 6" />
+</p>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ozzy2438/MoneyBall-Manchester-City/main/docs/screenshots/image7.jpeg" width="980" alt="Screenshot 7" />
+</p>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ozzy2438/MoneyBall-Manchester-City/main/docs/screenshots/image8.jpeg" width="980" alt="Screenshot 8" />
+</p>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ozzy2438/MoneyBall-Manchester-City/main/docs/screenshots/image9.jpeg" width="980" alt="Screenshot 9" />
+</p>
+
 ---
 
 ## Moneyball for Women’s Football
