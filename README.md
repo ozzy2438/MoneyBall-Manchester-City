@@ -25,34 +25,16 @@
 
 
 #### Club Overview — Budget, Trends, Squad
-<p align="center">
-  <a href="./docs/screenshots/club-overview-page.png">
-    <img src="./docs/screenshots/club-overview-page.png" width="980" alt="Club Overview — KPI cards, budget donut, ppg vs ga_per90 scatter, season trend line and player matrix." />
-  </a>
-</p>
-<p align="center">
-  <img src="https://raw.githubusercontent.com/ozzy2438/MoneyBall-Manchester-City/main/docs/screenshots/3-b28e25c6.jpeg" width="980" alt="Club Overview — Top KPI cards (points_gap, pyth_gap, xg, xga, attendance)" />
-</p>
-<p align="center"><em>Top KPI cards — points_gap, pyth_gap, xg/xga, attendance</em></p>
+<!-- Club Overview IMAGES (paired, not stacked) -->
+<div align="center">
+  <img src="https://github.com/ozzy2438/MoneyBall-Manchester-City/blob/e344efec2f8309d91ae3ca1b686f7322db9b267b/3-b28e25c6.jpg?raw=1" width="49%" alt="KPI strip — points_gap, pyth_gap, xg/xga, attendance">
+  <img src="https://github.com/ozzy2438/MoneyBall-Manchester-City/blob/1b95a1eea76d71ae4be2c0a3a473739603f04b70/2-b28e25c6.jpg?raw=1" width="49%" alt="Donut + PPG vs GA/90 scatter + season trend">
+</div>
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/ozzy2438/MoneyBall-Manchester-City/main/docs/screenshots/4-b28e25c6.jpeg" width="980" alt="Club Overview — Donut, PPG vs GA/90 scatter, and season trend" />
-</p>
-<p align="center"><em>Donut (budget by team), PPG vs GA/90 scatter, and three-season trend</em></p>
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/ozzy2438/MoneyBall-Manchester-City/main/docs/screenshots/1-b28e25c6.jpeg" width="980" alt="Club Overview — additional composite view" />
-</p>
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/ozzy2438/MoneyBall-Manchester-City/main/docs/screenshots/2-b28e25c6.jpeg" width="980" alt="Club Overview — Player matrix by season (minutes, composite percentile, goals/shots per90)" />
-</p>
-<p align="center"><em>Player matrix by season — minutes, composite percentile, finishing &amp; shooting context</em></p>
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/ozzy2438/MoneyBall-Manchester-City/main/docs/screenshots/2-30d6399c.jpeg" width="980" alt="Club Overview — Owner insights panel alongside matrix" />
-</p>
-<p align="center"><em>Owner insights panel — executive takeaways paired with season matrix</em></p>
+<div align="center">
+  <img src="https://github.com/ozzy2438/MoneyBall-Manchester-City/blob/e344efec2f8309d91ae3ca1b686f7322db9b267b/1-b28e25c6.jpg?raw=1" width="49%" alt="Player matrix by season — minutes, composite percentile, goals/shots per90">
+  <img src="https://github.com/ozzy2438/MoneyBall-Manchester-City/blob/1b95a1eea76d71ae4be2c0a3a473739603f04b70/2-30d6399c.jpg?raw=1" width="49%" alt="Owner insights panel next to matrix — executive takeaways">
+</div>
 
 **What to notice**
 - KPI cards give quick context: points_gap, pyth_gap, xg/xga, attendance.
@@ -63,25 +45,11 @@
 
 
 #### Transfer Decisions — Buy/Sell and Value Map
-<p align="center">
-  <a href="./docs/screenshots/transfer-decision-page.png">
-    <img src="./docs/screenshots/transfer-decision-page.png" width="980" alt="Transfer Decisions — Buy &amp; Sell lists, comp_pct vs predicted_points_uplift scatter, decision table." />
-  </a>
-</p>
-<p align="center">
-  <img src="https://raw.githubusercontent.com/ozzy2438/MoneyBall-Manchester-City/main/docs/screenshots/1-30d6399c.jpeg" width="980" alt="Transfer Decisions — KPI cards (Sell Avg Comp %, Buy Points Uplift, Sell Players, Sell Minutes)" />
-</p>
-<p align="center"><em>Decision KPIs — Sell Avg Comp %, Buy Points Uplift, Sell Players, Sell Minutes</em></p>
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/ozzy2438/MoneyBall-Manchester-City/main/docs/screenshots/3-30d6399c.jpeg" width="980" alt="Transfer Decisions — Priority Players to Buy &amp; Sell (ranked lists)" />
-</p>
-<p align="center"><em>Ranked lists — Priority Players to Buy (by predicted points uplift) and to Sell (with owner reasons)</em></p>
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/ozzy2438/MoneyBall-Manchester-City/main/docs/screenshots/4-30d6399c.jpeg" width="980" alt="Transfer Value Map — Passing Accuracy vs Predicted Points Uplift with decision table" />
-</p>
-<p align="center"><em>Transfer Value Map — X: comp_pct, Y: predicted_points_uplift, Size: minutes, Legend: position; plus decision table</em></p>
+<!-- Transfer Decisions IMAGES (paired, not stacked) -->
+<div align="center">
+  <img src="https://github.com/ozzy2438/MoneyBall-Manchester-City/blob/1b95a1eea76d71ae4be2c0a3a473739603f04b70/1-30d6399c.jpg?raw=1" width="49%" alt="Decision KPIs — Sell Avg Comp %, Buy Points Uplift, Sell Players, Sell Minutes">
+  <img src="https://github.com/ozzy2438/MoneyBall-Manchester-City/blob/e344efec2f8309d91ae3ca1b686f7322db9b267b/2-b28e25c6.jpg?raw=1" width="49%" alt="Priority Players to Buy/Sell — ranked lists">
+</div>
 
 **What to notice**
 - Left: **Priority Players to Buy** ranked by `predicted_points_uplift`.
